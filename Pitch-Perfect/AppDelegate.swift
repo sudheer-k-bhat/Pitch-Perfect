@@ -3,7 +3,6 @@
 //  Pitch-Perfect
 //
 //  Created by Sudheer Keshav Bhat on 04/11/15.
-//  Copyright (c) 2015 Udacity. All rights reserved.
 //
 
 import UIKit
