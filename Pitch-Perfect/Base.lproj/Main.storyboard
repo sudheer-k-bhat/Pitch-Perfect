@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XNn-b5-b59">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XNn-b5-b59">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -39,7 +41,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rSf-4b-jsM"/>
-                                    <segue destination="I1l-9G-lcn" kind="show" id="zWP-JJ-xBB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,6 +92,7 @@
                         <outlet property="recordButton" destination="TOC-08-21F" id="vdu-6r-6bg"/>
                         <outlet property="recordingInProgress" destination="6G5-RN-W2n" id="3UQ-SJ-Llq"/>
                         <outlet property="stopButton" destination="B6a-xv-lib" id="kNE-rA-bIZ"/>
+                        <segue destination="I1l-9G-lcn" kind="show" identifier="stopRecording" id="vO2-9u-PCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -153,12 +155,12 @@
                                 <exclude reference="1u6-IS-ry0"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2GI-Vy-nSG"/>
-                                <exclude reference="TUX-IU-0Br"/>
+                                <exclude reference="3gy-l2-mem"/>
+                                <exclude reference="U5k-nA-oud"/>
                                 <exclude reference="22A-87-uke"/>
                                 <exclude reference="uul-31-TDb"/>
-                                <exclude reference="U5k-nA-oud"/>
-                                <exclude reference="3gy-l2-mem"/>
+                                <exclude reference="2GI-Vy-nSG"/>
+                                <exclude reference="TUX-IU-0Br"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,12 +170,12 @@
                                 <include reference="1u6-IS-ry0"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2GI-Vy-nSG"/>
-                                <include reference="TUX-IU-0Br"/>
+                                <include reference="3gy-l2-mem"/>
+                                <include reference="U5k-nA-oud"/>
                                 <include reference="22A-87-uke"/>
                                 <include reference="uul-31-TDb"/>
-                                <include reference="U5k-nA-oud"/>
-                                <include reference="3gy-l2-mem"/>
+                                <include reference="2GI-Vy-nSG"/>
+                                <include reference="TUX-IU-0Br"/>
                             </mask>
                         </variation>
                     </view>
