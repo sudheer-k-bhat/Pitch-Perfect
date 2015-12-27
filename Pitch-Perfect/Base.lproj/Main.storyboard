@@ -138,14 +138,32 @@
                                     <action selector="stopPlaying:" destination="I1l-9G-lcn" eventType="touchUpInside" id="dnC-dv-nGz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRo-0K-Sdc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="I1l-9G-lcn" eventType="touchUpInside" id="h7b-AZ-8ue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPm-8g-H3X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthwader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="I1l-9G-lcn" eventType="touchUpInside" id="e6z-t9-dOO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dJg-4J-9zo" firstAttribute="top" secondItem="vgg-am-Qr8" secondAttribute="bottom" constant="50" id="22A-87-uke"/>
                             <constraint firstItem="gbk-c0-gIe" firstAttribute="leading" secondItem="yrz-ex-9ms" secondAttribute="leadingMargin" constant="33" id="2GI-Vy-nSG"/>
                             <constraint firstItem="VfE-9k-fsg" firstAttribute="top" secondItem="1u6-IS-ry0" secondAttribute="bottom" constant="26" id="3gy-l2-mem"/>
+                            <constraint firstItem="oPm-8g-H3X" firstAttribute="top" secondItem="dJg-4J-9zo" secondAttribute="bottom" constant="74" id="JI8-ga-Yje"/>
+                            <constraint firstItem="sRo-0K-Sdc" firstAttribute="leading" secondItem="yrz-ex-9ms" secondAttribute="leadingMargin" constant="33" id="L1k-zW-Nne"/>
                             <constraint firstItem="gbk-c0-gIe" firstAttribute="top" secondItem="vgg-am-Qr8" secondAttribute="bottom" constant="50" id="TUX-IU-0Br"/>
                             <constraint firstAttribute="centerX" secondItem="1u6-IS-ry0" secondAttribute="centerX" constant="-10" id="U5k-nA-oud"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oPm-8g-H3X" secondAttribute="trailing" constant="33" id="gls-uP-EtJ"/>
+                            <constraint firstItem="sRo-0K-Sdc" firstAttribute="top" secondItem="gbk-c0-gIe" secondAttribute="bottom" constant="74" id="kaJ-L3-Qyp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dJg-4J-9zo" secondAttribute="trailing" constant="33" id="uul-31-TDb"/>
                         </constraints>
                         <variation key="default">
@@ -153,6 +171,8 @@
                                 <exclude reference="gbk-c0-gIe"/>
                                 <exclude reference="dJg-4J-9zo"/>
                                 <exclude reference="1u6-IS-ry0"/>
+                                <exclude reference="sRo-0K-Sdc"/>
+                                <exclude reference="oPm-8g-H3X"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3gy-l2-mem"/>
@@ -161,6 +181,10 @@
                                 <exclude reference="uul-31-TDb"/>
                                 <exclude reference="2GI-Vy-nSG"/>
                                 <exclude reference="TUX-IU-0Br"/>
+                                <exclude reference="JI8-ga-Yje"/>
+                                <exclude reference="gls-uP-EtJ"/>
+                                <exclude reference="L1k-zW-Nne"/>
+                                <exclude reference="kaJ-L3-Qyp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -168,6 +192,8 @@
                                 <include reference="gbk-c0-gIe"/>
                                 <include reference="dJg-4J-9zo"/>
                                 <include reference="1u6-IS-ry0"/>
+                                <include reference="sRo-0K-Sdc"/>
+                                <include reference="oPm-8g-H3X"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3gy-l2-mem"/>
@@ -176,6 +202,10 @@
                                 <include reference="uul-31-TDb"/>
                                 <include reference="2GI-Vy-nSG"/>
                                 <include reference="TUX-IU-0Br"/>
+                                <include reference="JI8-ga-Yje"/>
+                                <include reference="gls-uP-EtJ"/>
+                                <include reference="L1k-zW-Nne"/>
+                                <include reference="kaJ-L3-Qyp"/>
                             </mask>
                         </variation>
                     </view>
@@ -204,6 +234,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthwader" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
